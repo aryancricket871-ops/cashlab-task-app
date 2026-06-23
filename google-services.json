@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "182759550309",
+    "project_id": "cashlab-728d6",
+    "storage_bucket": "cashlab-728d6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182759550309:android:750543390c3e5cdfe2c58c",
+        "android_client_info": {
+          "package_name": "com.aistudio.cashlab.abcde"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCd8LLizgAWzxgQqDNyK2EA_TgbUhNrDyI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
