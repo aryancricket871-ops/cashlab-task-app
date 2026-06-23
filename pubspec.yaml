@@ -1,26 +1,7 @@
-name: cashlab_task_app
-description: "Official CashLab task earning app."
-version: 1.0.0+1
-environment:
-  sdk: ">=3.0.0 <4.0.0"
-
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.2
+  firebase_core: ^3.0.0
+  firebase_auth: ^5.0.0
+  google_generative_ai: ^0.4.0 # यह जेमिनी के लिए है
 
-flutter:
-  uses-material-design: true
-name: cashlab_task_app
-description: "Official CashLab task earning app."
-version: 1.0.0+1
-environment:
-  sdk: ">=3.0.0 <4.0.0"
-
-dependencies:
-  flutter:
-    sdk: flutter
-  cupertino_icons: ^1.0.2
-
-flutter:
-  uses-material-design: true
