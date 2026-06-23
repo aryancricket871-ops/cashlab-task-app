@@ -1,14 +1,32 @@
-// home_screen.dart का नया डिज़ाइन कोड
-Card(
-  color: const Color(0xFF1A1226), // वही प्रीमियम शेड
-  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-  child: ListTile(
-    leading: const Icon(Icons.play_circle_fill, color: Colors.purpleAccent, size: 40),
-    title: const Text('Watch Videos', style: TextStyle(color: Colors.white)),
-    trailing: ElevatedButton(
-      style: ElevatedButton.styleFrom(backgroundColor: Colors.purpleAccent),
-      onPressed: () {}, 
-      child: const Text('Start'),
-    ),
-  ),
-),
+import 'package:flutter/material.dart';
+
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  int _selectedIndex = 0;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(child: Text("Page $_selectedIndex", style: TextStyle(color: Colors.white))),
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Color(0xFF0D0714),
+        selectedItemColor: Colors.purpleAccent,
+        unselectedItemColor: Colors.grey,
+        currentIndex: _selectedIndex,
+        onTap: (index) => setState(() => _selectedIndex = index),
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(Icons.task), label: 'Tasks'),
+          BottomNavigationBarItem(icon: Icon(Icons.wallet), label: 'Wallet'),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
+        ],
+      ),
+    );
+  }
+}
+
